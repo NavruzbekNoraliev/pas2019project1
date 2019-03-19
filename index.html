@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>PAS SW Project 1</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<script type="text/javascript" src="./index.js"></script>
+	<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>
+		.cust_container {
+			background-color: white;
+			margin-left: 20%;
+			margin-right: 20%;
+		}
+
+		@media only screen and (max-width: 600px) {
+			.cust_container {
+				background-color: white;
+				margin-left: 2%;
+				margin-right: 2%;
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<div class="cust_content">
+		<div class="cust_container">
+			<img src="iutlogo.png" style="width:100%; height: auto">
+			<hr>
+			<h1>Probability and Statistics MSC 3010</h1>
+			<h1>Semester 2019</h1>
+			<h1>Project 1</h1>
+			<hr>
+			<div class="tasks">
+				<div>
+					<h2>The Geometric Distribution</h2>
+					<form>
+						<div class="row" style="margin-bottom:5px;">
+							<span class="col-6">Enter <b>k</b> for P(x=k)</span>
+							<input class="col-3" type="text" name="k1" id="k1">
+						</div>
+						<div class="row" style="margin-bottom:5px;">
+							<span class="col-6" for="max">Tick for P(x &#8804 k)</span>
+							<input class="col-3" type="checkbox" name="max" id="max" style="margin-top:5px;">
+						</div>
+						<div class="row" style="margin-bottom:5px;">
+							<span class="col-6" for="k2">Enter <b>k2</b> for P(k1 &#8804 x &#8804 k2)</span>
+							<input class="col-3" type="text" name="k2" id="k2">
+						</div>
+						<div class="row" style="margin-bottom:5px;">
+							<span class="col-6" for="p">Enter <b>p</b></span>
+							<input class="col-3" type="text" name="pg" id="pg">
+						</div>
+					</form>
+					<button class="butn" onclick="geometric()">Calculate</button>
+					<div class="row" style="margin-left:5px; margin-top:10px;">
+						<span style="font-weight: bold; margin-right:5px;">Probability : </span>
+						<span id="geo_result"></span>
+					</div>
+				</div>
+				<hr>
+				<div>
+					<h2>The Negative Binomial Distribution</h2>
+
+					<form>
+						<div class="row" style="margin-bottom:5px;">
+							<span class="col-3">Enter <b>k</b> </span>
+							<input class="col-3" type="text" name="k_1" id="k_1">
+						</div>
+						<div class="row" style="margin-bottom:5px;">
+							<span class="col-3">Enter <b>k2</b> </span>
+							<input class="col-3" type="text" name="k_2" id="k_2">
+						</div>
+						<div class="row" style="margin-bottom:5px;">
+							<span class="col-3">Enter <b>r</b></span>
+							<input class="col-3" type="text" name="r" id="r">
+						</div>
+						<div class="row" style="margin-bottom:5px;">
+							<span class="col-3">Enter <b>p</b></span>
+							<input class="col-3" type="text" name="p" id="p">
+						</div>
+					</form>
+					<button class="butn" onclick="binomial()">Calculate</button>
+					<div class="row" style="margin-left:5px; margin-top:10px;">
+						<span style="font-weight: bold; margin-right:5px; margin-bottom: 15px;">Probability : </span>
+						<span id="bin_result"></span>
+					</div>
+					<div id="chart"></div>
+				
+				</div>
+				<hr>
+				<div class="submittedby">
+					<h2>Submitted by:</h2>
+					<div class="row">
+						<h6 class="col-3">Abdulmalik Mamirov<h6><h6 class="col-2"> u1610007 </h6><code class="col-2">sec: 3</code>
+					</div>
+					<div class="row">
+						<h6 class="col-3">Abubakr Jabbarov<h6><h6 class="col-2"> u1610012</h6><code class="col-2">sec: 1</code>
+					</div>
+					<div class="row">
+						<h6 class="col-3">Navruzbek Noraliev<h6><h6 class="col-2"> u1610166 </h6><code class="col-2">sec: 2</code>
+					</div>
+								<div class="row" style="margin-left:5px;">
+							<a target="_blank" href="https://github.com/NavruzbekNoraliev/pas2019project1" class="btn fa fa-github" 
+							style=" padding: 20px;
+									font-size: 30px;
+									width: 50px;
+									text-align: center;
+									text-decoration: none;
+									margin: 5px 2px;"></a>
+							<a onclick="fprint()" class="btn fa fa-print" 
+							style=" padding: 20px;
+									font-size: 30px;
+									width: 50px;
+									text-align: center;
+									text-decoration: none;
+									margin: 5px 2px;"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+</body>
+
+</html>

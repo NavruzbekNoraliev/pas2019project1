@@ -1,0 +1,36 @@
+.title{
+    font-weight: 700
+}
+.cust_content{
+    background-image: url("background.png");
+}
+h1{
+    text-align: center
+}
+#bin_result, #geo_result{
+    color: slategrey
+}
+.cust_container .butn {
+    background-color: #f1f1f1;
+    color: black;
+    font-size: 16px;
+    padding: 6px 7px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
+.cust_container .butn:hover {
+    background-color: green;
+    color: white;
+}
+.tasks{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.submittedby{
+    padding-bottom: 50px;
+}
+.fa:hover {
+      opacity: 0.7;
+}
