@@ -1,4 +1,5 @@
 Inha University in Tashkent 
+
 Probability and Statistics MSC 3010
 Spring Semester 2019
 Project 1
