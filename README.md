@@ -35,3 +35,5 @@ Abdulmalik Mamirov u1610007 sec:3
 Abu-Bakr Jabbarov u1610012 sec:1
 
 Navruzbek Noraliev u1610166 sec:2
+
+DEMO https://navruzbeknoraliev.github.io/pas2019project1/
